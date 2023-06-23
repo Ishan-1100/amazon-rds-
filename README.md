@@ -14,5 +14,5 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * `cdk synth`       emits the synthesized CloudFormation template
 
 
-##Description of cdk code
+## Description of cdk code
  The code is intended to deploy amazon rds with instance type as memory optimised and is using specific subnets and vpc which are already existing.

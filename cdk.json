@@ -17,6 +17,8 @@
     ]
   },
   "context": {
+    "IpAddresses": "192.168.0.0/16,10.0.0.0/16,172.16.0.0/12",
+    "Ports": "443,8080,22",
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
     "@aws-cdk/core:target-partitions": [

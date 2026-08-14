@@ -1,18 +1,30 @@
-# Welcome to your CDK TypeScript project
+---
 
-This is a blank project for CDK development with TypeScript.
+###  `amazon-rds-` → README.md
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```markdown
+# Amazon Aurora PostgreSQL with AWS CDK
 
-## Useful commands
+AWS CDK (TypeScript) project to deploy a secure Amazon Aurora PostgreSQL cluster.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## What this creates
 
+- Aurora PostgreSQL cluster (memory-optimized)
+- Credentials stored in AWS Secrets Manager
+- Storage encryption enabled
+- Subnet group using existing VPC
+- Useful CloudFormation outputs
 
-## Description of cdk code
- The code is intended to deploy amazon rds with instance type as memory optimised and is using specific subnets and vpc which are already existing.
+## Prerequisites
+
+- Node.js 18+
+- AWS CDK CLI
+- AWS credentials configured
+- Existing VPC with private subnets
+
+## Deploy
+
+```bash
+npm install
+cdk bootstrap        # only once per account/region
+cdk deploy

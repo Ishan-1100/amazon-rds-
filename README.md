@@ -1,6 +1,6 @@
 ---
 
-###  `amazon-rds-` → README.md
+###  amazon-rds-
 
 ```markdown
 # Amazon Aurora PostgreSQL with AWS CDK
@@ -28,3 +28,15 @@ AWS CDK (TypeScript) project to deploy a secure Amazon Aurora PostgreSQL cluster
 npm install
 cdk bootstrap        # only once per account/region
 cdk deploy
+
+Cleanup
+cdk destroy
+Security notes
+
+Credentials are generated and stored in Secrets Manager (never hardcoded)
+Storage is encrypted at rest
+Intended to run in private subnets
+
+
+Author: Ishan Ahuja
+DevSecOps | Cloud Infrastructure
